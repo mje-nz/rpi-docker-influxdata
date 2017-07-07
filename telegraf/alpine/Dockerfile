@@ -1,6 +1,6 @@
-FROM hypriot/rpi-alpine:3.4
+FROM arm32v6/alpine:3.6
 
-ENV TELEGRAF_VERSION 1.1.2
+ENV TELEGRAF_VERSION 1.3.3
 
 RUN apk add --no-cache ca-certificates && \
     update-ca-certificates
