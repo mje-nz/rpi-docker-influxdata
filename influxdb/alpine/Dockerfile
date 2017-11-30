@@ -1,6 +1,6 @@
 FROM arm32v6/alpine:3.6
 
-ENV INFLUXDB_VERSION 1.2.4
+ENV INFLUXDB_VERSION 1.4.2
 RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates && \
     update-ca-certificates && \
     gpg --keyserver hkp://ha.pool.sks-keyservers.net \
